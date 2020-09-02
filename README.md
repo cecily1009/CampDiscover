@@ -1,3 +1,2 @@
-# CampDiscover
-Yelp-like website for campsites
-A Node.js web application project from the Udemy course - The Web Developer Bootcamp by Colt Steele
+# Web App: CampDiscover
+CampDiscover is a Yelp-like web application for campsites with RESTful routing project from the [Udemy course - The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/)
