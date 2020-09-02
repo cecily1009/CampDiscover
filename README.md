@@ -4,7 +4,12 @@ CampDiscover is a Yelp-like web application for campsites with RESTful routing p
 To see the app in action, go to:[CampDiscover Demo](https://git.heroku.com/campdiscover.git)
 - Login username : Guest01
 - Login password : guest123
+## Demo images
 ![Image text](Demo_imgs/landing.png)
+![Image text](Demo_imgs/demo1.png)
+![Image text](Demo_imgs/demo2.png)
+![Image text](Demo_imgs/demo3.png)
+![Image text](Demo_imgs/demo4.png)
 # Features
 - Authentication:
   - User login with username and password
