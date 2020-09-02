@@ -1,0 +1,42 @@
+.thumbnail img{
+  width: 100%;
+}
+.thumbnail {
+  padding: 0;
+}
+.thumbnail .caption {
+  padding: 9px;
+}
+
+#delete-form {
+  display: inline;
+}
+.checked {
+    color: orange;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+#avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin:2px 50px;
+}
+
+#profile {
+  margin: 2px 19%;
+}
+#profile-avatar {
+  margin: 1px 27%;
+}
+.well {
+
+    background-color: gainsboro;
+    padding: 3%;
+
+}

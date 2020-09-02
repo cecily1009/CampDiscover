@@ -1,0 +1,50 @@
+<%- include ("../partials/header") %>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <h3 id="profile">
+                    <%= user.firstName + " " + user.lastName %>
+                </h3>
+                <img id="avatar" src="<%= user.avatar %>" alt="user profile image" class="card-img-top">
+                <div class="card-body">
+                    <% if(currUser && user._id.equals(currUser._id)) {%>
+                        <a id="profile-avatar" class="btn btn-sm btn-info" href="/users/<%= user.id%>/edit">Change photo</a>
+                        <% } %>
+                            <br>
+                            <p id="profile">
+                                <%= user.resetLink %>
+                                    <a href="mailto:<%= user.resetLink %>" class="card-link"><span class="glyphicon glyphicon-envelope"></span></a>
+                                    <a href="/users/<%= user.id %>/edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                            </p>
+
+                            <br>
+                            <textarea name="introduction" rows="8" cols="50"><%= user.introduction %></textarea>
+                </div>
+                <% if(currUser && user._id.equals(currUser._id)) {%>
+                    <div id="profile">
+                        <a href="/users/<%= user.id%>/edit" class="btn btn-primary">Update</a>
+                        <a href="/campgrounds" class="btn btn-primary">Back</a>
+                    </div>
+
+                    <% } %>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            <h3>
+                <%= user.username %>'s campgrounds:</h3>
+            <hr>
+            <ul>
+                <% campgrounds.forEach(function(campground) { %>
+                    <li>
+                        <h4>
+                            <a href="/campgrounds/<%= campground.id %>">
+                                <%= campground.name %>
+                            </a>
+                        </h4>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+    </div>
+    <%- include ("../partials/footer") %>

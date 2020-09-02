@@ -1,0 +1,60 @@
+<%- include("../partials/header") %>
+    <% if(currUser&& currUser.isAdmin) { %>
+        <h1>You are Admin.</h1>
+        <% } %>
+            <header class="jumbotron">
+                <div class="container">
+                    <h1><span class="glyphicon glyphicon-tent"></span>Welcome to CampDiscover!</h1>
+                    <p>View our hand-picked campgrounds from all over the world.</p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="/campgrounds/new">Discovered New campground?</a>
+                    </p>
+                </div>
+            </header>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <% if(noMatch !== null){ %>
+                        <h3>
+                            <%= noMatch %>
+                        </h3>
+                        <p>
+                            <form class="form-inline" action="/campgrounds" method="GET">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="search" placeholder="Enter keyword">
+                                    <input type="submit" value="search" class="btn btn-default">
+                                </div>
+                            </form>
+                        </p>
+                        <% } %>
+                </div>
+
+                <% campgrounds.forEach(function(camp){ %>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnal">
+                            <img src="<%= camp.image %>" alt="<%= camp.name %>" style='width:100%;height:200px'>
+                            <div class="caption">
+                                <h4>
+                                    <%= camp.name %>
+                                </h4>
+                                <% if(camp.rating ===0){ %>
+                                    <em> No Reviews yet.</em>
+                                    <% } else { %>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star <% if (camp.rating > 1.5) { %> checked <% } %>"></span>
+                                        <span class="fa fa-star <% if (camp.rating > 2.5) { %> checked <% } %>"></span>
+                                        <span class="fa fa-star <% if (camp.rating > 3.5) { %> checked <% } %>"></span>
+                                        <span class="fa fa-star <% if (camp.rating > 4.5) { %> checked <% } %>"></span>
+                                        <% } %>
+                            </div>
+                            <p>
+                                <a href="/campgrounds/<%= camp._id %>" class="btn btn-primary">More Info</a></p>
+                        </div>
+                    </div>
+                    <% });%>
+
+            </div>
+
+
+
+
+            <%- include("../partials/footer") %>

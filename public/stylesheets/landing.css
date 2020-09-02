@@ -1,0 +1,76 @@
+body {
+  background-color: #000;
+}
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+#landing-header h1 {
+  color: #fff;
+}
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+.slideshow li:nth-child(1) {
+  background-image: url(https://img.apmcdn.org/a8568293c661be645ca207b38736857c4f61b467/normal/40b9d1-20200424-summer-camp08.jpeg)
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://www.outtherecolorado.com/wp-content/uploads/2017/03/23caa67e99c75c84468d07f6aa80027b.jpg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://q-cf.bstatic.com/images/hotel/max1024x768/234/234843649.jpg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://5a6a246dfe17a1aac1cd-b99970780ce78ebdd694d83e551ef810.ssl.cf1.rackcdn.com/orgheaders/3395/night%20camp%20lassen.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/54f90898e4b07a02b49737d1/1491578914311-372CHRLP1RY9JW5S5419/ke17ZwdGBToddI8pDm48kKpW6rMuWD2UmJw3YxhVYeUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcwBcxSaAiJyzyso_QBvMinswHeIgcQbrOypP3pUFE8owRLwWJHeFGYKYJtM10V1g9/gowder.jpg?format=2500w);
+  animation-delay: 40s;
+}
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
