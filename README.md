@@ -5,11 +5,15 @@ To see the app in action, go to:[CampDiscover Demo](https://git.heroku.com/campd
 - Login username : Guest01
 - Login password : guest123
 ## Demo images
-![Image text](Demo_imgs/landing.png)
-![Image text](Demo_imgs/demo1.png)
-![Image text](Demo_imgs/demo5.png)
-![Image text](Demo_imgs/demo3.png)
-![Image text](Demo_imgs/demo6.png)
+<div align="center">
+	<img src="Demo_imgs/landing.png" alt="Editor" width="500">
+</div>
+<div align="center">
+	<img src="Demo_imgs/demo1.png" alt="Editor" width="500">
+</div>
+<div align="center">
+	<img src="Demo_imgs/demo6.png" alt="Editor" width="500">
+</div>
 # Features
 - Authentication:
   - User login with username and password
