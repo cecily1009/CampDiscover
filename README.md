@@ -7,9 +7,9 @@ To see the app in action, go to:[CampDiscover Demo](https://git.heroku.com/campd
 ## Demo images
 ![Image text](Demo_imgs/landing.png)
 ![Image text](Demo_imgs/demo1.png)
-![Image text](Demo_imgs/demo2.png)
+![Image text](Demo_imgs/demo5.png)
 ![Image text](Demo_imgs/demo3.png)
-![Image text](Demo_imgs/demo4.png)
+![Image text](Demo_imgs/demo6.png)
 # Features
 - Authentication:
   - User login with username and password
