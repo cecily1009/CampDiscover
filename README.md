@@ -28,8 +28,8 @@ To see the app in action, go to:[CampDiscover Demo](https://git.heroku.com/campd
 - Used Google Fonts and Font Awesome instead default fonts
 - Used momentJS to show post and comment creation and update timestamp
 - Added Admin invitation code generation functionality
-- Added "Forgot password" functionality allowing user to reset password
-- Integrate a review system where users can give 1-5 star ratings to individual campground
+- Added “forgot password” functionality to allow users receiving an email with reset-password link to reset password
+- Integrated a review system where users can give 1-5 star ratings to individual campground 
 # Built with
 - Front-end
   - [ejs](https://www.npmjs.com/package/ejs)
