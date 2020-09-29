@@ -2,7 +2,7 @@
 CampDiscover is a Yelp-like web application for campsites with RESTful routing project from the [Udemy course - The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/)
 Implemented integration test using Selenium to cover 10+ most common user workflows.
 # Live Demo
-To see the app in action, go to:[CampDiscover Demo](https://campdiscover.herokuapp.com/)
+To see the app in action, go to: [CampDiscover Demo](https://campdiscover.herokuapp.com/)
 - Login username : Guest01
 - Login password : guest123
 ## Demo images
