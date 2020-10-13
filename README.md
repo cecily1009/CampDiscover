@@ -63,5 +63,6 @@ To see the app in action, go to: [CampDiscover Demo](https://campdiscover.heroku
   - [connect-flash](https://www.npmjs.com/package/connect-flash)
 # Testing tool
 - [Selenium](https://www.npmjs.com/package/selenium-webdriver)
+- [Testing repository link](https://github.com/cecily1009/Selenium-pom-test.campDiscover)
 # Deployment
 - [Heroku](https://heroku.com/)
